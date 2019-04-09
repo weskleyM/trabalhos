@@ -1,0 +1,499 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+/*CONFIGURAÇOES GLOBAIS*/
+body {
+    background-color: #dddddd;
+}
+p {
+    font-family: sans-serif;
+    text-align: justify;
+}
+div#interface {
+    width: 800px;
+    background-color: #ffffff;
+    margin: -10px auto 0px auto;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+/*CONFIGURAÇÔES INDEX*/
+header#cabecalho {
+    border-bottom: 1px #606060 solid;
+    background: url("../_imgs/logo-2.png") no-repeat 200px 70px;
+    padding-bottom: 55px;
+}
+header#cabecalho h1 {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 30pt;
+    color: #606060;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    padding: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+header#cabecalho h2 {
+    font-family: 'Titillium Web', sans-serif;
+    color: #888888;
+    font-size: 15pt;
+    padding: 0px;
+    margin-top: 0px;
+}
+header#cabecalho img#logo {
+    position: absolute;
+    top: 60px;
+    left: 1200px;
+    width: 120px;
+    height: 120px;
+}
+figure.fachada {
+    position: relative;
+    border: 5px solid rgb(255, 255, 255);
+    box-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
+figure.fachada img {
+    width: 100%;
+    height: 100%;
+}
+figure.fachada figcaption {
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 1s;
+}
+figure.fachada:hover figcaption {
+    opacity: 1;
+}
+nav#menu {
+    display: block;
+}
+nav#menu ul {
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: 0px;
+    left: 850px;
+}
+nav#menu li {
+    display: inline-block;
+    background-color: #909090;
+    padding: 10px;
+    margin: 3px;
+    transition: background-color 0.5s;
+}
+nav#menu li:hover {
+    background-color: #606060;
+}
+nav#menu h2 {
+    display: none;
+}
+nav#menu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+section#corpo {
+    display: block;
+    width: 480px;
+    float: left;
+    border-right: 1px solid #606060;
+    padding-right: 10px;
+}
+article#principal h2 {
+    font-size: 15pt;
+    color: #606060;
+    background-color: #dddddd;
+    padding: 5px 0px 5px 5px;
+    margin: 10px;
+    font-family: 'Titillium Web', sans-serif;
+}
+article#secundario h2 {
+    font-size: 15pt;
+    color: #606060;
+    background-color: #dddddd;
+    padding: 5px 0px 5px 5px;
+    margin: 10px;
+    font-family: 'Titillium Web', sans-serif;
+}
+aside#lateral {
+    display: block;
+    width: 300px;
+    float: right;
+}
+footer#rodape {
+    clear: both;
+    border-top: 1px solid #606060;
+}
+footer#rodape p {
+    text-align: center;
+}
+footer#rodape a {
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #000000;
+}
+article#sobre h2 {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20pt;
+    text-align: center;
+    color: #606060;
+}
+article#sobre img {
+    width: 100%;
+    height: 100%;
+    padding-top: 10px;
+    display: block;
+}
+iframe#pjanela {
+    height: 282px;
+    border: none;
+}
+/*CONFIGURAÇÕES PRATOS*/
+article#cardapio h2 {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 15pt;
+    color: #000000;
+    background-color: #dddddd;
+    text-align: center;
+    text-transform: uppercase;
+}
+article#cardapio p {
+    font-family: sans-serif;
+    font-size: 15pt;
+    text-align: center;
+}
+article#cardapio button#mostrar {
+    border-radius: 8px;
+    background-color: #ffffff;
+    border: 4px solid #606060;
+    text-align: center;
+    display: inline-block;
+    width: 200px;
+    padding: 5px;
+    margin: 0px 0px 10px 300px;
+    cursor: pointer;
+    transition: all .5s;
+    font-size: 15pt;
+    color: #606060;
+}
+article#cardapio button#mostrar:hover {
+    background-color: #606060;
+}
+article#cardapio button#mostrar span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+article#cardapio button#mostrar span:after {
+    content: '\00bb';
+    color: white;
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+article#cardapio button#mostrar:hover span {
+    padding-right: 25px;
+    color: white;
+}
+article#cardapio button#mostrar:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+ul#produtos {
+    width: 700px;
+    margin: 0px auto 0px auto;
+    padding: 50px;
+    overflow: hidden;
+    list-style: none;
+}
+ul#produtos li {
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border: 1px solid white;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .4);
+    -webkit-transition: all 0.5s ease-in;
+}
+ul#produtos li span {
+    opacity: 0;
+    color: #ffffff;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+    background-color: rgba(0, 0, 0, .6);
+    font-size: 8pt;
+    line-height: 370px;
+    padding: 3px;
+}
+ul#produtos li:hover {
+    -webkit-transform: scale(1.5);
+}
+ul#produtos li:hover span {
+    opacity: 1;
+}
+ul#produtos li#prod01 {
+    background: url('../_imgs/_cardapio/salada1.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 600px 400px;
+    background-color: white;
+}
+ul#produtos li#prod01:hover {
+    background-position: 0px 0px;
+    background-size: 300px 200px;
+}
+ul#produtos li#prod02 {
+    background: url('../_imgs/_cardapio/salada2.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 600px 400px;
+    background-color: white;
+}
+ul#produtos li#prod02:hover {
+    background-position: 0px 0px;
+    background-size: 300px 200px;
+}
+ul#produtos li#prod03 {
+    background: url('../_imgs/_cardapio/massas1.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 600px 400px;
+    background-color: white;
+}
+ul#produtos li#prod03:hover {
+    background-position: 0px 0px;
+    background-size: 300px 200px;
+}
+ul#produtos li#prod04 {
+    background: url('../_imgs/_cardapio/massas2.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 600px 400px;
+    background-color: white;
+}
+ul#produtos li#prod04:hover {
+    background-position: 0px 0px;
+    background-size: 300px 200px;
+}
+ul#produtos li#prod05 {
+    background: url('../_imgs/_cardapio/pizza1.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 600px 400px;
+    background-color: white;
+}
+ul#produtos li#prod05:hover {
+    background-position: 0px 0px;
+    background-size: 300px 200px;
+}
+ul#produtos li#prod06 {
+    background: url('../_imgs/_cardapio/pizza2.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 600px 400px;
+    background-color: white;
+}
+ul#produtos li#prod06:hover {
+    background-position: 0px 0px;
+    background-size: 300px 200px;
+}
+ul#produtos li#prod07 {
+    background: url('../_imgs/_cardapio/frango1.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 600px 400px;
+    background-color: white;
+}
+ul#produtos li#prod07:hover {
+    background-position: 0px 0px;
+    background-size: 300px 200px;
+}
+ul#produtos li#prod08 {
+    background: url('../_imgs/_cardapio/frango2.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 600px 400px;
+    background-color: white;
+}
+ul#produtos li#prod08:hover {
+    background-position: 0px 0px;
+    background-size: 300px 200px;
+}
+ul#produtos li#prod09 {
+    background: url('../_imgs/_cardapio/carne1.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 600px 400px;
+    background-color: white;
+}
+ul#produtos li#prod09:hover {
+    background-position: 0px 0px;
+    background-size: 300px 200px;
+}
+ul#produtos li#prod10 {
+    background: url('../_imgs/_cardapio/carne2.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 600px 400px;
+    background-color: white;
+}
+ul#produtos li#prod10:hover {
+    background-position: 0px 0px;
+    background-size: 300px 200px;
+}
+ul#produtos-ext {
+    width: 700px;
+    margin: 0 auto;
+    padding: 50px;
+    overflow: hidden;
+    list-style: none;
+}
+ul#produtos-ext li {
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border: 1px solid white;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .4);
+    -webkit-transition: all 0.5s ease-in;
+}
+ul#produtos-ext li span {
+    opacity: 0;
+    color: #ffffff;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+    background-color: rgba(0, 0, 0, .6);
+    font-size: 8pt;
+    line-height: 370px;
+    padding: 3px;
+}
+ul#produtos-ext li:hover {
+    -webkit-transform: scale(1.5);
+}
+ul#produtos-ext li:hover span {
+    opacity: 1;
+}
+ul#produtos-ext li#prod11 {
+    background: url('../_imgs/_cardapio/salada3.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 600px 400px;
+    background-color: white;
+}
+ul#produtos-ext li#prod11:hover {
+    background-position: 0px 0px;
+    background-size: 300px 200px;
+}
+ul#produtos-ext li#prod12 {
+    background: url('../_imgs/_cardapio/salada4.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 600px 400px;
+    background-color: white;
+}
+ul#produtos-ext li#prod12:hover {
+    background-position: 0px 0px;
+    background-size: 300px 200px;
+}
+ul#produtos-ext li#prod13 {
+    background: url('../_imgs/_cardapio/massas3.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 600px 400px;
+    background-color: white;
+}
+ul#produtos-ext li#prod13:hover {
+    background-position: 0px 0px;
+    background-size: 300px 200px;
+}
+ul#produtos-ext li#prod14 {
+    background: url('../_imgs/_cardapio/massas4.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 600px 400px;
+    background-color: white;
+}
+ul#produtos-ext li#prod14:hover {
+    background-position: 0px 0px;
+    background-size: 300px 200px;
+}
+ul#produtos-ext li#prod15 {
+    background: url('../_imgs/_cardapio/pizza3.png') no-repeat;
+    background-position: 50% 50%;
+    background-size: 600px 400px;
+    background-color: white;
+}
+ul#produtos-ext li#prod15:hover {
+    background-position: 0px 0px;
+    background-size: 300px 200px;
+}
+ul#produtos-ext li#prod16 {
+    background: url('../_imgs/_cardapio/pizza4.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 600px 400px;
+    background-color: white;
+}
+ul#produtos-ext li#prod16:hover {
+    background-position: 0px 0px;
+    background-size: 300px 200px;
+}
+ul#produtos-ext li#prod17 {
+    background: url('../_imgs/_cardapio/frango4.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 600px 400px;
+    background-color: white;
+}
+ul#produtos-ext li#prod17:hover {
+    background-position: 0px 0px;
+    background-size: 300px 200px;
+}
+ul#produtos-ext li#prod18 {
+    background: url('../_imgs/_cardapio/frango3.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 600px 400px;
+    background-color: white;
+}
+ul#produtos-ext li#prod18:hover {
+    background-position: 0px 0px;
+    background-size: 300px 200px;
+}
+ul#produtos-ext li#prod19 {
+    background: url('../_imgs/_cardapio/carne3.jpeg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 600px 400px;
+    background-color: white;
+}
+ul#produtos-ext li#prod19:hover {
+    background-position: 0px 0px;
+    background-size: 300px 200px;
+}
+ul#produtos-ext li#prod20 {
+    background: url('../_imgs/_cardapio/carne4.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 600px 400px;
+    background-color: white;
+}
+ul#produtos-ext li#prod20:hover {
+    background-position: 0px 0px;
+    background-size: 300px 200px;
+}
+/*CONFIGURAÇÕES CONTATO*/
+fieldset#contatos legend {
+    font-family: sans-serif;
+    font-size: 15pt;
+}
+fieldset#contatos p {
+    font-family: sans-serif;
+    font-size: 12pt;
+}
+form#formcon input#enviar {
+    font-size: 12pt;
+    padding: 6px 20px;
+    border-radius: 12px;
+    background-color: #ffffff;
+    border: 2px solid #008CBA;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+form#formcon input#enviar:hover {
+    background-color: #008CBA;
+    color: white;
+    border: 2px solid #008CBA;
+}

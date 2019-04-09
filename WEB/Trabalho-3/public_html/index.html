@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Home</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="_css/style.css">
+    </head>
+    <body>
+        <div id="interface">
+            <header id="cabecalho">
+                <hgroup>
+                    <h1>Seven Grill</h1>
+                    <h2>Excelência e Sabor</h2>
+                </hgroup>
+                <img id="logo" src="_imgs/home.png">
+                <nav id="menu">
+                    <h2>Menu Principal</h2>
+                    <ul>
+                        <li onmouseover="mudaLogos('_imgs/home.png')" onmouseout="mudaLogos('_imgs/home.png')"><a href="index.html">Inicio</a></li>
+                        <li onmouseover="mudaLogos('_imgs/restaurante.png')" onmouseout="mudaLogos('_imgs/home.png')"><a href="restaurante.html">Restaurante</a></li>
+                        <li onmouseover="mudaLogos('_imgs/cardapio.png')" onmouseout="mudaLogos('_imgs/home.png')"><a href="pratos.html">Cardápio</a></li>
+                        <li onmouseover="mudaLogos('_imgs/contato.png')" onmouseout="mudaLogos('_imgs/home.png')"><a href="contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <section id="corpo">
+                <article id="principal">
+                    <h2>Funcionamento</h2>
+                    <figure class="fachada">
+                        <img src="_imgs/fachada.jpg">
+                        <figcaption>
+                            <h3>7 Grill</h3>
+                            <p>Sofisticação e Qualidade</p>
+                        </figcaption>
+                    </figure>
+                    <p>Venha conferir a melhor comida da região. temos bolos,
+                        tortas, pizzas, churrasco e muito mais.</p>
+                    <p>Nosso Cheffs sao super profissionais, com um curriculo
+                        invejavel e muita experiencia.</p>
+                    <p>De 18:00 às 00:00.</p>
+                </article>
+            </section>
+            <aside id="lateral">
+                <article id="secundario">
+                    <h2>Ofertas!</h2>
+                    <p>massas, saladas, carnes em promoção.</p>
+                    <p>pague com todo conforto do cartao de credito ou debito.</p>
+                </article>
+                <iframe src="promocao.html" name="janela" id="pjanela"></iframe>
+            </aside>
+            <footer id="rodape">
+                <p>Copyright &copy; 1997 - by WESKLEY - 399368 - (99) 99999-9999</p>
+                <p><a href="https://pt-br.facebook.com/" target="_blank">Facebook</a> | <a href="https://www.instagram.com/?hl=pt-br" target="_blank">Instagram</a> | <a href="https://twitter.com/login?lang=pt" target="_blank">Twitter</a></p>
+            </footer>
+        </div>
+        <script src="_js/script.js"></script>
+    </body>
+</html>

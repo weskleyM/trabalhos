@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Home</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="_css/style.css">
+        <script src="_js/jquery-3.3.1.min.js"></script>
+        <script src="_js/script.js"></script>
+    </head>
+    <body>
+        <div id="interface">
+            <header id="cabecalho">
+                <hgroup>
+                    <h1>Seven Grill</h1>
+                    <h2>Excelência e Sabor</h2>
+                </hgroup>
+                <img id="logo" src="_imgs/cardapio.png" alt="logo da pagina">
+                <nav id="menu">
+                    <h2>Menu Principal</h2>
+                    <ul>
+                        <li onmouseover="mudaLogos('_imgs/home.png')" onmouseout="mudaLogos('_imgs/cardapio.png')">
+                            <a href="index.html">Inicio</a></li>
+                        <li onmouseover="mudaLogos('_imgs/restaurante.png')" onmouseout="mudaLogos('_imgs/cardapio.png')">
+                            <a href="restaurante.html">Restaurante</a></li>
+                        <li onmouseover="mudaLogos('_imgs/cardapio.png')" onmouseout="mudaLogos('_imgs/cardapio.png')">
+                            <a href="pratos.html">Cardápio</a></li>
+                        <li onmouseover="mudaLogos('_imgs/contato.png')" onmouseout="mudaLogos('_imgs/cardapio.png')">
+                            <a href="contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <article id="cardapio">
+                <h2>Cardápio</h2>
+                <p>Confira nossos preços!</p>
+                <ul id="produtos">
+                    <li id="prod01"><span>Salada com Penne - R$15,00</span></li>
+                    <li id="prod02"><span>Salada Mista - R$ 8,00</span></li>
+                    <li id="prod03"><span>Penne ao Molho - R$20,00</span></li>
+                    <li id="prod04"><span>Lasanha à Bolonhesa - R$ 20,00</span></li>
+                    <li id="prod05"><span>Pizza Portuguesa - R$15,00</span></li>
+                    <li id="prod06"><span>Pizza 4 Queijos - R$12,00</span></li>
+                    <li id="prod07"><span>Ensopado de Frango - R$10,00</span></li>
+                    <li id="prod08"><span>Frango Empanado - R$10,00</span></li>
+                    <li id="prod09"><span>Filé a Parmegianna - R$20,00</span></li>
+                    <li id="prod10"><span>Churrasco Misto - R$25,00</span></li>
+                </ul>
+                <button id="mostrar"  style="vertical-align:middle"><span>Ver mais pratos </span></button>
+                <ul id="produtos-ext">
+                    <li id="prod11"><span>Salada de Frutas - R$6,00</span></li>
+                    <li id="prod12"><span>Salada de Maionese - R$ 7,00</span></li>
+                    <li id="prod13"><span>Raviolli - R$18,00</span></li>
+                    <li id="prod14"><span>Espaguete - R$ 20,00</span></li>
+                    <li id="prod15"><span>Pizza Frango - R$12,00</span></li>
+                    <li id="prod16"><span>Pizza Banana - R$12,00</span></li>
+                    <li id="prod17"><span>Frango Passarinho - R$10,00</span></li>
+                    <li id="prod18"><span>Frango Xadrez - R$13,00</span></li>
+                    <li id="prod19"><span>Costela - R$20,00</span></li>
+                    <li id="prod20"><span>Lombo Suíno - R$19,00</span></li>
+                </ul>
+            </article>
+            <footer id="rodape">
+                <p>Copyright &copy; 1997 - by WESKLEY - 399368 - (99) 99999-9999</p>
+                <p><a href="https://pt-br.facebook.com/" target="_blank">Facebook</a> |
+                    <a href="https://www.instagram.com/?hl=pt-br" target="_blank">Instagram</a> |
+                    <a href="https://twitter.com/login?lang=pt" target="_blank">Twitter</a></p>
+            </footer>
+        </div>
+    </body>
+</html>
